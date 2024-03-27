@@ -1,0 +1,90 @@
+.liveMatchWrapper{
+    width: 100%;
+    height: 80px;
+    border-radius: 10px;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.competition{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.competitionImg{
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+}
+
+.matchInfo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+
+.team_A , .team_B{
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.team_A_logo , .team_B_logo{
+    width: 50px;
+    height: 50px;
+}
+
+.team_A{
+    justify-content: end;
+}
+
+.team_B{
+    justify-content: start;
+}
+
+.matchResult{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.result{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.team_A_name , .team_B_name{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+p{
+    text-transform: uppercase;
+}
+
+.live_tv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.live_tv img{
+    width: 40px;
+    height: 40px;
+}

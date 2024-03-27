@@ -1,0 +1,72 @@
+{
+    "data": [
+        {
+            "id": "0",
+            "live": true,
+            "minute": "54",
+            "teams": [
+                {
+                    "team": "barcelona",
+                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/agh9ifb2mw3ivjusgedj7c3fe.png"
+                },
+                {
+                    "team": "real madrid",
+                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/3kq9cckrnlogidldtdie2fkbl.png"
+                }
+            ],
+            "scores": [4, 2],
+            "competition": { "competitionName": "laliga", "competitionLogoUrl": "https://uploadkon.ir/uploads/39a727_24LL-logo.png" }
+        },
+        {
+            "id": "1",
+            "live": false,
+            "minute": "",
+            "teams": [
+                {
+                    "team": "rome",
+                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/2tk2l9sgktwc9jhzqdd4mpdtb.png"
+                },
+                {
+                    "team": "ac milan",
+                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/9dntj5dioj5ex52yrgwzxrq9l.png"
+                }
+            ],
+            "scores": [2, 2],
+            "competition": { "competitionName": "serie a", "competitionLogoUrl": "https://uploadkon.ir/uploads/f2f327_24SA-logo.png" }
+        },
+        {
+            "id": "2",
+            "live": false,
+            "minute": "",
+            "teams": [
+                {
+                    "team": "manchester city",
+                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/a3nyxabgsqlnqfkeg41m6tnpp.png"
+                },
+                {
+                    "team": "arsenal",
+                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/4dsgumo7d4zupm2ugsvm4zm4d.png"
+                }
+            ],
+            "scores": [1, 0],
+            "competition": { "competitionName": "premier league", "competitionLogoUrl": "https://uploadkon.ir/uploads/82df27_24PL-logo.png" }
+        },
+        {
+            "id": "3",
+            "live": false,
+            "minute": "",
+            "teams": [
+                {
+                    "team": "manchester united",
+                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/6eqit8ye8aomdsrrq0hk3v7gh.png"
+                },
+                {
+                    "team": "chelsea",
+                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/9q0arba2kbnywth8bkxlhgmdr.png"
+                }
+            ],
+            "scores": [1, 2],
+            "competition": { "competitionName": "premier league", "competitionLogoUrl": "https://uploadkon.ir/uploads/82df27_24PL-logo.png" }
+        }
+    ]
+}
