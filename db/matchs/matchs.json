@@ -2,71 +2,132 @@
     "data": [
         {
             "id": "0",
-            "live": true,
-            "minute": "54",
+            "live": false,
+            "minute": "",
             "teams": [
                 {
                     "team": "barcelona",
-                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/agh9ifb2mw3ivjusgedj7c3fe.png"
+                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/agh9ifb2mw3ivjusgedj7c3fe.png",
+                    "manager": "xavi" ,
+                    "lineups":{
+                        "formation" : "4-3-3",
+                        "players": [
+                            {
+                                "player_id": 1,
+                                "firstname": "mohsen",
+                                "lastname": "el matador",
+                                "birthday": null,
+                                "age": 22,
+                                "img": "https://cdn.sportdataapi.com/images/soccer/players/50/26770.png",
+                                "country": null,
+                                "number": 10
+                            },
+                            {
+                                "player_id": 2,
+                                "firstname": "ali",
+                                "lastname": "el todor",
+                                "birthday": null,
+                                "age": 22,
+                                "img": "https://cdn.sportdataapi.com/images/soccer/players/50/26770.png",
+                                "country": null,
+                                "number": 11
+                            }
+                        ]
+                    }
                 },
                 {
                     "team": "real madrid",
-                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/3kq9cckrnlogidldtdie2fkbl.png"
+                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/3kq9cckrnlogidldtdie2fkbl.png",
+                    "manager": "xavi" ,
+                    "lineups":{
+                        "formation" : "4-3-3",
+                        "players": [
+                            {
+                                "player_id": 1,
+                                "firstname": "mamd",
+                                "lastname": "jr",
+                                "birthday": null,
+                                "age": 22,
+                                "img": "https://cdn.sportdataapi.com/images/soccer/players/50/26770.png",
+                                "country": null,
+                                "number": 22
+                            },
+                            {
+                                "player_id": 2,
+                                "firstname": "seyed",
+                                "lastname": "davandeh",
+                                "birthday": null,
+                                "age": 22,
+                                "img": "https://cdn.sportdataapi.com/images/soccer/players/50/26770.png",
+                                "country": null,
+                                "number": 17
+                            },
+                            {
+                                "player_id": 3,
+                                "firstname": "moz",
+                                "lastname": "abi",
+                                "birthday": null,
+                                "age": 22,
+                                "img": "https://cdn.sportdataapi.com/images/soccer/players/50/26770.png",
+                                "country": null,
+                                "number": 9
+                            }
+                        ]
+                    }
                 }
             ],
             "scores": [4, 2],
-            "competition": { "competitionName": "laliga", "competitionLogoUrl": "https://uploadkon.ir/uploads/39a727_24LL-logo.png" }
-        },
-        {
-            "id": "1",
-            "live": false,
-            "minute": "",
-            "teams": [
+            "competition": { "competitionName": "laliga", "competitionLogoUrl": "https://uploadkon.ir/uploads/39a727_24LL-logo.png" },
+            "events":[
                 {
-                    "team": "rome",
-                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/2tk2l9sgktwc9jhzqdd4mpdtb.png"
+                    "status": "goal",
+                    "player": "messi",
+                    "minute" : 10,
+                    "team" : 0
                 },
                 {
-                    "team": "ac milan",
-                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/9dntj5dioj5ex52yrgwzxrq9l.png"
-                }
-            ],
-            "scores": [2, 2],
-            "competition": { "competitionName": "serie a", "competitionLogoUrl": "https://uploadkon.ir/uploads/f2f327_24SA-logo.png" }
-        },
-        {
-            "id": "2",
-            "live": false,
-            "minute": "",
-            "teams": [
-                {
-                    "team": "manchester city",
-                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/a3nyxabgsqlnqfkeg41m6tnpp.png"
+                    "status": "yellowCard",
+                    "player": "pique",
+                    "minute" : 18,
+                    "team" : 0
                 },
                 {
-                    "team": "arsenal",
-                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/4dsgumo7d4zupm2ugsvm4zm4d.png"
-                }
-            ],
-            "scores": [1, 0],
-            "competition": { "competitionName": "premier league", "competitionLogoUrl": "https://uploadkon.ir/uploads/82df27_24PL-logo.png" }
-        },
-        {
-            "id": "3",
-            "live": false,
-            "minute": "",
-            "teams": [
-                {
-                    "team": "manchester united",
-                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/6eqit8ye8aomdsrrq0hk3v7gh.png"
+                    "status": "goal",
+                    "player": "ronaldo",
+                    "minute" : 23,
+                    "team" : 1
                 },
                 {
-                    "team": "chelsea",
-                    "logoUrl": "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/9q0arba2kbnywth8bkxlhgmdr.png"
+                    "status": "goal",
+                    "player": "messi",
+                    "minute" : 44,
+                    "team" : 0
+                },
+                {
+                    "status": "goal",
+                    "player": "messi",
+                    "minute" : 52,
+                    "team" : 0
+                },
+                {
+                    "status": "goal",
+                    "player": "suarez",
+                    "minute" : 77,
+                    "team" : 0
+                },
+                {
+                    "status": "goal",
+                    "player": "isco",
+                    "minute" : 89,
+                    "team" : 1
+                },
+                {
+                    "status": "redCard",
+                    "player": "ramos",
+                    "minute" : 90,
+                    "team" : 1
                 }
-            ],
-            "scores": [1, 2],
-            "competition": { "competitionName": "premier league", "competitionLogoUrl": "https://uploadkon.ir/uploads/82df27_24PL-logo.png" }
+            ]
         }
     ]
 }

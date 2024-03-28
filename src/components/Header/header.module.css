@@ -28,7 +28,7 @@
     border-bottom: 2px solid black;
     font-size: 15px;
     cursor: pointer;
-    transition: 0.2s ; 
+    transition: 0.2s; 
 }
 
 .menu li:hover{

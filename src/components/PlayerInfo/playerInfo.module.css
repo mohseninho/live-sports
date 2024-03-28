@@ -1,0 +1,46 @@
+.wrapper{
+    width: 300px;
+    height: 70px;
+    background: linear-gradient(to bottom right , rgba(255,255,255,0.75) , rgba(255,255,255,0.2));
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+}
+
+.playerImg{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.playerName{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.team_a_players{
+    width: 300px;
+    height: 70px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.team_b_players{
+    width: 300px;
+    height: 70px;
+    background-color: aquamarine;
+    border-radius: 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 10px;
+    margin: 10px 0;
+}

@@ -1,0 +1,20 @@
+{
+    "data":[
+        {
+            "team_id" : 1,
+            "team_name" : "barcelona",
+            "team_logo" : "",
+            "team_manager" : "xavi hernandez",
+            "team_ranking" : "4",
+            "team_country" : "spain"
+        },
+        {
+            "team_id" : 2,
+            "team_name" : "real madrid",
+            "team_logo" : "",
+            "team_manager" : "carlo ancelotti",
+            "team_ranking" : "1",
+            "team_country" : "spain"
+        }
+    ]
+}

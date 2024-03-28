@@ -5,16 +5,18 @@ import { Link } from "react-router-dom";
 function NavBar() {
     return (
         <div className={style.header}>
-            <img src={logo} alt="logo" className={style.logo} />
+            <Link to = "/">
+                <img src={logo} alt="logo" className={style.logo} />
+            </Link>
             <ul className={style.menu}>
                 <li>
-                    <Link to={"/scores"}>scores</Link>
+                    <Link to = "/scores">scores</Link>
                 </li>
                 <li>
-                    <Link to={"/latest"}>latest</Link>
+                    <Link to = "/latest">latest</Link>
                 </li>
                 <li>
-                    <Link to={"/about"}>about us</Link>
+                    <Link to = "/about">about us</Link>
                 </li>
             </ul>
         </div>
