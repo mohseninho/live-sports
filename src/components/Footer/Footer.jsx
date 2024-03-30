@@ -4,6 +4,8 @@ import instagram from "../../assets/images/socialMedia/instagram.png";
 import twitterx from "../../assets/images/socialMedia/twitterx.png";
 import facebook from "../../assets/images/socialMedia/facebook.png";
 import youtube from "../../assets/images/socialMedia/youtube.png";
+import { faInstagram , faTwitter , faFacebook , faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Footer() {
     return (
         <div className={style.footer}>
@@ -19,10 +21,10 @@ function Footer() {
                 <div className={style.socialMedia}>
                     <p>follow us on</p>
                     <div className={style.logos}>
-                        <img src={instagram} alt="instagram" />
-                        <img src={facebook} alt="facebook" />
-                        <img src={twitterx} alt="twitter x" />
-                        <img src={youtube} alt="youtube" />
+                        <FontAwesomeIcon icon={faInstagram}/>
+                        <FontAwesomeIcon icon={faFacebook}/>
+                        <FontAwesomeIcon icon={faTwitter}/>
+                        <FontAwesomeIcon icon={faYoutube}/>
                     </div>
                 </div>
             </div>

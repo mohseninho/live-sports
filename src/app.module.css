@@ -1,0 +1,14 @@
+.app {
+    background-image: url("./assets/images/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    background-attachment: fixed;
+}
+
+.wrapper{
+    max-width: 1800px;
+    margin: 0 auto;
+}
