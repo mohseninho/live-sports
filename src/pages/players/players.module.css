@@ -4,9 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: start;
+    font-size: 16px;
 }
 .container{
-    width: 80%;
+    width: 90%;
     margin: 20px 0;
     border-radius: 25px;
     display: flex;
@@ -17,7 +18,7 @@
 
 .playerProfile{
     flex: 1;
-    padding: 20px 20px;
+    padding: 20px;
     min-height: 200px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 25px;
@@ -29,7 +30,7 @@
 
 .playerState{
     flex: 3;
-    padding: 20px 20px;
+    padding: 20px;
     min-height: 200px;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 25px;
@@ -47,7 +48,7 @@
 }
 
 .info{
-    margin: 10px;
+    margin: 5px 0;
     display: flex;
     justify-content: center;
     align-items: start;
@@ -89,17 +90,17 @@
 }
 
 .lw{
-    top: 80px;
-    left: 40px;
+    top: 17%;
+    left: 12%;
 }
 
 .rw{
-    top: 80px;
-    right: 40px;
+    top: 17%;
+    right: 12%;
 }
 
 .cb{
-    bottom: 80px;
+    bottom: 17%;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -107,7 +108,7 @@
 }
 
 .st{
-    top: 60px;
+    top: 14%;
     left: 0;
     right: 0;
     margin-left: auto;
@@ -115,13 +116,13 @@
 }
 
 .rb{
-    bottom: 80px;
-    right: 40px; 
+    bottom: 17%;
+    right: 12%; 
 }
 
 .lb{
-    bottom: 80px;
-    left: 40px;
+    bottom: 17%;
+    left: 12%;
 }
 
 .cm{
@@ -136,7 +137,7 @@
 }
 
 .gk{
-    bottom: 45px;
+    bottom: 10%;
     right: 0;
     left: 0;
     margin-right: auto;
@@ -144,7 +145,7 @@
 }
 
 .dmf{
-    bottom: 150px;
+    bottom: 30%;
     right: 0;
     left: 0;
     margin-right: auto;
@@ -152,9 +153,72 @@
 }
 
 .amf{
-    top: 150px;
+    top: 30%;
     right: 0;
     left: 0;
     margin-right: auto;
     margin-left: auto;
+}
+
+@media screen and (max-width : 800px) {
+    .container{
+        width: 95%;
+    }
+
+    .playerProfile{
+        font-size: 0.8em;
+    }
+
+    .profile{
+        width: 100px;
+        height: 100px;
+    }
+
+    .position{
+        width: 200px;
+    }
+
+    .rw , .lw , .cb , .lb ,.rb , .st , .cm , .amf , .dmf , .gk{
+        width: 40px;
+        height: 40px;
+        font-size: 0.6em;
+    }
+
+    .position div:hover{
+        width: 45px;
+        height: 45px;
+    }
+}
+
+
+
+@media screen and (max-width : 600px) {
+    
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .playerProfile{
+        width: fit-content;
+    }
+
+    .playerState{
+        width: 95%;
+        font-size: 0.85em;
+        padding: 10px;
+    }
+
+    .playerProfile{
+        font-size: 0.75em;
+        padding: 10px;
+    }
+    .position div{
+        font-size: 0.8em;
+    }
+
+    .profile{
+        width: 80px;
+        height: 80px;
+    }
 }

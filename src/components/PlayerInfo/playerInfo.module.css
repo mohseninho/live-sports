@@ -1,14 +1,13 @@
 .wrapper{
-    width: 100%;
+    width: 60%;
     height: 70px;
     background: linear-gradient(to right , rgba(255,255,255,0.75) , rgba(255,255,255,0.2));
     border-radius: 10px;
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 5px;
+    padding: 4px;
     font-size: 16px;
-    overflow: hidden;
 }
 
 .playerImg{
@@ -21,16 +20,63 @@
 .playerName , .playerNumber{
     font-size: 1em;
     font-weight: normal;
+    display: flex;
+    align-items: center;
 }
 
+.playerName{
+    width: 100%;
+    overflow: hidden;
+}
+
+.info{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width : 800px) {
+    .wrapper{
+        width: 80%;
+        height: 50px;
+    }
+
+    .playerName{
+        font-size: 0.75em;
+    }
+
+    .playerImg{
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
+    }
+}
 
 @media screen and (max-width : 600px) {
     .wrapper{
         width: 80%;
+        height: 50px;
     }
 
-    .playerName , .playerNumber{
-        font-size: 0.7em;
-        font-weight: bold;
+    .info{
+        overflow: hidden;
+    }
+
+    .playerName{
+        font-size: 0.75em;
+        height: 100%;
+    }
+
+    .playerNumber{
+        display: none;
+    }
+
+    .playerImg{
+        width: 35px;
+        height: 35px;
+        margin-right: 5px;
     }
 }

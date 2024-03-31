@@ -4,9 +4,10 @@
     display: flex;
     justify-content: start;
     align-items: center;
-    padding: 0px 60px;
+    padding: 0px 50px;
     background-color: rgb(0, 0, 0);
     border-bottom: 4px solid red;
+    font-size: 16px;
 }
 
 .logo{
@@ -26,11 +27,41 @@
     font-weight: bold;
     text-transform: uppercase;
     border-bottom: 2px solid black;
-    font-size: 15px;
+    font-size: 1em;
     cursor: pointer;
     transition: 0.2s; 
 }
 
 .menu li:hover{
     border-bottom: 2px solid chocolate;
+}
+
+@media screen and (max-width : 800px) {
+    .header{
+        padding: 0px 40px;
+    }
+    
+    .logo{
+        width: 70px;
+    }
+
+    .menu li{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    
+    .header{
+        height: 50px;
+        padding: 0 30px;
+    }
+    
+    .logo{
+        width: 55px;
+    }
+
+    .menu li{
+        font-size: 0.7em;
+    }
 }

@@ -1,21 +1,23 @@
 .footer {
     width: 100%;
-    height: 250px;
+    height: 200px;
     background-color: rgba(0, 0, 0, 0.7);
     margin-top: 20px;
     display: flex;
-    justify-content: center;
+    padding-top: 40px;
+    justify-content: start;
     align-items: center;
     flex-direction: column;
     color: white;
     position: relative;
+    font-size: 16px;
 }
 
 .info{
     width: 80%;
     display: flex;
     justify-content: space-between;
-    align-items: center; 
+    align-items: center;
 }
 
 .links{
@@ -23,7 +25,7 @@
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    font-size: 18px;
+    font-size: 1em;
     text-transform: uppercase;
     border-left: 2px solid white;
     padding: 0 20px;
@@ -61,5 +63,47 @@
 .description{
     position: absolute;
     text-align: center;
-    bottom: 20px;
+    bottom: 10px;
+}
+
+@media screen and (max-width : 800px) {
+    .footer{
+        font-size: 0.85em;
+        height: 200px;
+    }
+
+    .info{
+        width: 90%;
+    }
+
+    .description{
+        bottom: 5px;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .footer{
+        font-size: 0.7em;
+        height: 150px;
+        padding-top: 30px;
+    }
+
+    .info{
+        width: 90%;
+    }
+
+    .links , .socialMedia{
+        padding: 0 10px;
+    }
+
+    .logos *{
+        width: 25px;
+        height: 25px;
+    }
+
+    .description{
+        font-size: 0.8em;
+        bottom: 5px;
+    }
+
 }

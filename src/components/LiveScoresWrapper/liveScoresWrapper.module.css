@@ -18,6 +18,30 @@
     gap: 10px;  
 }
 
+.item{
+    width: 90%;
+}
+
 .liveScoresWrapper link{
     width: 90%;
+}
+
+@media screen and (max-width : 800px) {
+    .liveScoresWrapper{
+        width: 100%;
+    }
+
+    .item{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .liveScoresWrapper{
+        width: 100%;
+    }
+
+    .item{
+        width: 100%;
+    }
 }

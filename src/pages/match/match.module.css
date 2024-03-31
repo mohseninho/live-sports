@@ -6,7 +6,7 @@
     flex-direction: column;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 16px;
     overflow: hidden;
 }
 
@@ -17,7 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 20px 0;
+    margin: 15px 0;
     padding: 10px 0;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .result{
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0px 10px;
 }
 
@@ -43,7 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: start;
-    gap: 20px;
+    gap: 15px;
 }
 
 .events{
@@ -52,6 +52,7 @@
     border-radius: 25px;
     text-align: center;
     position: relative;
+    padding: 10px;
 }
 
 .sideBar{
@@ -60,7 +61,7 @@
     justify-content: center;
     align-items: start;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .details{
@@ -68,17 +69,16 @@
     min-height: 100px;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
-    padding: 0 20px 0px 20px;
+    padding: 10px;
     height: 100%;
 }
 
-.details *{
+.competition ,.match_date ,.match_referee{
     height: 20px;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .competition{
-    margin-top: 40px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -94,13 +94,16 @@
     width: 100%;
     min-height: 200px;
     background: rgba(255, 255, 255, 0.4);
-    border-radius: 25px;
-    text-align: center;
-    padding: 20px;
+    border-radius: 25px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0 0 0;
 }
 
 .highlight_video{
-    width: 90%;
+    width: 95%;
     margin: 10px;
     border-radius: 15px;
 }
@@ -115,11 +118,10 @@
     align-items: center;
     flex-direction: column;
     gap: 10px;
-    padding: 20px 0;
+    padding: 10px;
 }
 
-.event_title , .detail_title{
-    margin-top: 20px; 
+.event_title , .detail_title , .stats_title ,.highlight_title{
     font-size: 1.5em;
 }
 
@@ -127,13 +129,12 @@
     width: 80%;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
-    margin: 20px 0;
+    margin: 15px 0;
     gap: 5px;
     display: flex;
     justify-content: center;
     align-items: start;
     padding: 10px 10px;
-    background-color: brown;
 }
 
 .team_a_players{
@@ -158,9 +159,18 @@
     align-items: center;
 }
 
+@media screen and (max-width : 800px) {
 
+    .resultWrapper , .matchInfo , .lineups{
+        width: 95%;
+    }
 
-@media screen and (max-width : 600px) {
+    .team_a_logo , .team_b_logo{
+        width: 40px;
+        height: 40px;
+        margin: 0 4px;
+    }
+    
     .matchInfo{
         flex-direction: column;
     }
@@ -173,3 +183,68 @@
         width: 100%;
     }
 }
+
+
+
+@media screen and (max-width : 600px) {
+
+    .matchInfo , .sideBar{
+        gap: 8px;
+    }
+
+    .lineups ,.resultWrapper{
+        margin: 8px 0;
+    }
+    .resultWrapper{
+        font-size: 0.7em;
+    }
+
+    .result{
+        font-size: 1.4em;
+    }
+
+    .result{
+        margin: 0px 2px;
+    }
+    
+    .matchInfo{
+        flex-direction: column;
+    }
+
+    .events{
+        width: 100%;
+    }
+
+    .sideBar{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 400px) {
+
+    .resultWrapper{
+        font-size: 0.55em;
+    }
+    .result{
+        margin: 0px 2px;
+    }
+
+    .team_a_logo , .team_b_logo{
+        width: 30px;
+        height: 30px;
+        margin: 0 4px;
+    }
+    
+    .matchInfo{
+        flex-direction: column;
+    }
+
+    .events{
+        width: 100%;
+    }
+
+    .sideBar{
+        width: 100%;
+    }
+}
+

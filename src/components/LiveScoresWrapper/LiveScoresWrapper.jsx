@@ -15,7 +15,7 @@ function LiveScoresWrapper() {
             <div className={style.liveScoresWrapper}>
                 {
                     matchs.map(match=>(
-                        <Link style = {{width : "90%"}} to={`/match/${match.id}`} key={match.id}>
+                        <Link className={style.item} to={`/match/${match.id}`} key={match.id}>
                             <LiveMatch data={match}/>
                         </Link>
                     ))

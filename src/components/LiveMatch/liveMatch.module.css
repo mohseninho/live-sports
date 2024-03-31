@@ -6,7 +6,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 15px;
+    font-size: 16px;
 }
 
 .competition{
@@ -38,8 +39,8 @@
 }
 
 .team_A_logo , .team_B_logo{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
 }
 
 .team_A{
@@ -63,12 +64,12 @@
     justify-content: center;
     align-items: center;
     margin: 0 10px;
-    font-size: 20px;
+    font-size: 1em;
     font-weight: bold;
 }
 
 .team_A_name , .team_B_name{
-    font-size: 15px;
+    font-size: 0.8em;
     font-weight: bold;
     margin: 0 5px;
 }
@@ -87,4 +88,70 @@ p{
 .live_tv img{
     width: 40px;
     height: 40px;
+}
+
+@media screen and (max-width : 800px) {
+
+    .liveMatchWrapper{
+        padding: 0 10px;
+    }
+}
+
+
+@media screen and (max-width : 600px) {
+
+    .liveMatchWrapper{
+        height: 55px;
+    }
+
+    .result{
+        margin: 0 4px;
+        font-size: 0.8em;
+    }
+
+    .team_A_name , .team_B_name{
+        font-size: 0.7em;
+    }
+    
+    .liveMatchWrapper{
+        padding: 0 8px;
+    }
+
+    .competition{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width : 400px) {
+
+    .result{
+        margin: 0 5px;
+        font-size: 0.8em;
+    }
+
+    .liveMatchWrapper{
+        height: 45px;
+    }
+    
+    .liveMatchWrapper{
+        padding: 0 4px;
+    }
+
+    .team_A_logo , .team_B_logo , .live_tv img{
+        width: 25px;
+        height: 25px;
+    }
+
+    .team_A_name , .team_B_name{
+        font-size: 0.6em;
+    }
+
+    .competition{
+        display: none;
+    }
+
+    .matchStatus{
+        font-size: 0.5em;
+    }
 }
