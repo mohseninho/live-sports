@@ -1,9 +1,5 @@
 import { Link } from "react-router-dom";
 import style from "./footer.module.css";
-import instagram from "../../assets/images/socialMedia/instagram.png";
-import twitterx from "../../assets/images/socialMedia/twitterx.png";
-import facebook from "../../assets/images/socialMedia/facebook.png";
-import youtube from "../../assets/images/socialMedia/youtube.png";
 import { faInstagram , faTwitter , faFacebook , faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Footer() {

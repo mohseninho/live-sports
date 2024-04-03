@@ -50,7 +50,6 @@ function Players(){
 
     return(
         <div>
-            <Header />
             <div className={style.wrapper}>
                 <div className={style.container}>
                     <div className={style.playerProfile}>
@@ -86,8 +85,6 @@ function Players(){
                     </div>
                 </div>
             </div>
-
-            <Footer />
         </div>
     );
 }

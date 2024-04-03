@@ -3,7 +3,6 @@ import Header from "./../../components/Header/Header"
 function NotFound(){
     return(
         <>
-            <Header />
             <h1>not found!</h1>
         </>
     );

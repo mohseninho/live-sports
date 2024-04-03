@@ -10,7 +10,7 @@
     width: 90%;
     padding: 20px;
     background-color: brown;
-    border-radius: 25px;
+    border-radius: 20px;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -28,7 +28,8 @@
 
 @media screen and (max-width : 800px) {
     .liveScoresWrapper{
-        width: 100%;
+        width: 95%;
+        padding: 10px;
     }
 
     .item{
@@ -38,7 +39,7 @@
 
 @media screen and (max-width : 600px) {
     .liveScoresWrapper{
-        width: 100%;
+        width: 95%;
     }
 
     .item{

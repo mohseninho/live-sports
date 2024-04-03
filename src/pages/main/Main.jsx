@@ -7,10 +7,8 @@ import LiveScoresWrapper from "../../components/LiveScoresWrapper/LiveScoresWrap
 function Main(){
     return(
         <div>
-            <Header />
             <Banner />
             <LiveScoresWrapper />
-            <Footer />
         </div>
     );
 }

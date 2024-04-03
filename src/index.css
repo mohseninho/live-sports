@@ -23,3 +23,8 @@ a{
   text-decoration: none;
   color: white;
 }
+
+p{
+  font-family: "PT Sans", sans-serif;
+  font-weight: bold;
+}
