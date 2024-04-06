@@ -3,12 +3,14 @@ import LiveMatch from "../LiveMatch/LiveMatch";
 import style from "./liveScoresWrapper.module.css";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import { data } from "../../data/matches/matches";
 function LiveScoresWrapper() {
     const [matchs, setMatchs] = useState([]);
     useEffect(() => {
-        axios.get("http://localhost:8000/data").then((result) => {
-            setMatchs(result.data);
-        });
+        setMatchs(data);
+        // axios.get("http://localhost:8000/data").then((result) => {
+        //     setMatchs(result.data);
+        // });
     }, []);
     return (
         <div className={style.wrapper}>

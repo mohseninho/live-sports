@@ -1,0 +1,29 @@
+.wrapper{
+    width: 90%;
+    height: 35px;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.teamInfo{
+    flex: 2;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.teamResult{
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teamLogo{
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+}

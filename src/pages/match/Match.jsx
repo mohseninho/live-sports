@@ -8,10 +8,10 @@ import MatchEvent from "../../components/matchEvent/MatchEvent";
 import PlayerInfo from "../../components/PlayerInfo/PlayerInfo";
 import Loading from "../../components/Loading/Loading";
 import Stats from "../../components/Stats/Stats";
+import { data } from "../../data/matches/matches";
 
 function Match(){
     const [isLoading,setIsLoading] = useState(false);
-    const [stats , setStats] = useState({});
     const [matchData,setMatchData] = useState({
         scores:[],
         teams:[{lineups:{players:[]}},{lineups:{players:[]}}],
@@ -24,14 +24,15 @@ function Match(){
 
     useEffect(()=>{
         setIsLoading(true);
-        axios.get(`http://localhost:8000/data/${params.id}`).then(result=>{
-            setMatchData(result.data);
-            setStats(result.data.stats);
-            setIsLoading(false);
-        }).catch(error =>{
-            setIsLoading(false);
-            console.log(error);
-        });
+        setMatchData(data[params.id]);
+        setIsLoading(false);
+        // axios.get(`http://localhost:8000/data/${params.id}`).then(result=>{
+        //     setMatchData(result.data);
+        //     setIsLoading(false);
+        // }).catch(error =>{
+        //     setIsLoading(false);
+        //     console.log(error);
+        // });
     },[])
 
     return(
@@ -76,9 +77,12 @@ function Match(){
                             {
                                 isLoading ? <Loading /> :(
                                     <>
+
                                         <div className={style.competition}>
                                             <p>competition :</p>
-                                            <img className={style.competitions_logo} src={matchData.competition.competitionLogoUrl}/>
+                                            <Link to={`/competition/${matchData.competition.id}`}>
+                                                <img className={style.competitions_logo} src={matchData.competition.competitionLogoUrl}/>
+                                            </Link>
                                         </div>
                                         <p className={style.match_date}>{`date : ${matchData.match_date}`}</p>
                                         <p className={style.match_referee}>{`referee : ${matchData.match_referee}`}</p>

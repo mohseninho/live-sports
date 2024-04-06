@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "id": "0",
+            "id": 1,
             "live": false,
             "minute": "",
             "match_date" : "2020-09-18 20:30:00",
@@ -28,7 +28,7 @@
                 }
             ],
             "scores": [4, 2],
-            "competition": { "competitionName": "laliga", "competitionLogoUrl": "https://uploadkon.ir/uploads/39a727_24LL-logo.png" },
+            "competition": { "id": 2 ,   "competitionName": "laliga", "competitionLogoUrl": "https://uploadkon.ir/uploads/39a727_24LL-logo.png" },
             "stats" : [
                 {"stat" : "shots", "data" : [12,8]},
                 {"stat" : "shots on target", "data" : [6,4]},
@@ -126,7 +126,7 @@
             ]
         },
         {
-            "id": "1",
+            "id": 2,
             "live": false,
             "minute": "",
             "match_date" : "2020-09-18 20:30:00",
@@ -153,7 +153,7 @@
                 }
             ],
             "scores": [3, 0],
-            "competition": { "competitionName": "premier league", "competitionLogoUrl": "https://uploadkon.ir/uploads/d59630_24PL-logo.png" },
+            "competition": {"id": 1 , "competitionName": "premier league", "competitionLogoUrl": "https://uploadkon.ir/uploads/d59630_24PL-logo.png" },
             "stats" : [
                 {"stat" : "shots", "data" : [14,6]},
                 {"stat" : "shots on target", "data" : [8,2]},

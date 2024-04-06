@@ -10,6 +10,7 @@
     overflow: hidden;
 }
 
+
 .resultWrapper{
     width: 80%;
     background: rgba(255, 255, 255, 0.5);
@@ -140,6 +141,7 @@
 .team_a_players{
     width: 50%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
     position: relative;
@@ -148,12 +150,14 @@
 .team_b_players{
     width: 50%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 10px;
     position: relative;
 }
 
 .player{
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,6 +167,10 @@
 
     .resultWrapper , .matchInfo , .lineups{
         width: 95%;
+    }
+
+    .player{
+        width: 65%;
     }
 
     .team_a_logo , .team_b_logo{
@@ -190,6 +198,10 @@
 
     .matchInfo , .sideBar{
         gap: 8px;
+    }
+
+    .player{
+        width: 100%;
     }
 
     .lineups ,.resultWrapper{
@@ -225,6 +237,7 @@
     .resultWrapper{
         font-size: 0.55em;
     }
+
     .result{
         margin: 0px 2px;
     }

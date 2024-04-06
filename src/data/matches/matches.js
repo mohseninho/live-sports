@@ -1,0 +1,243 @@
+export const data = [
+    {
+        id: 0,
+        live: false,
+        minute: "",
+        match_date: "2020-09-18 20:30:00",
+        match_referee: "mateu lahoz",
+        match_highlight:
+            "https://as5.asset.aparat.com/aparat-video/80aa83c897e9fed8c2b25fced6f5d29318442241-360p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjZlMTAwNzhhZTE0NDc4ZGYzOThmMzU1MWI5ZmNkM2YxIiwiZXhwIjoxNzExODE0MTYwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.J4pCb2QxKGNbKA8Eld6peKvetF0zoQ7vyx_1ZkbzFIU",
+        teams: [
+            {
+                team: "barcelona",
+                logoUrl:
+                    "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/agh9ifb2mw3ivjusgedj7c3fe.png",
+                manager: "xavi",
+                lineups: {
+                    formation: "4-3-3",
+                    players: [5, 1, 0],
+                },
+            },
+            {
+                team: "real madrid",
+                logoUrl:
+                    "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/3kq9cckrnlogidldtdie2fkbl.png",
+                manager: "xavi",
+                lineups: {
+                    formation: "4-3-3",
+                    players: [2, 3, 4],
+                },
+            },
+        ],
+        scores: [4, 2],
+        competition: {
+            id: 1,
+            competitionName: "laliga",
+            competitionLogoUrl:
+                "https://uploadkon.ir/uploads/39a727_24LL-logo.png",
+        },
+        stats: [
+            { stat: "shots", data: [12, 8] },
+            { stat: "shots on target", data: [6, 4] },
+            { stat: "possession", data: [60, 40] },
+            { stat: "passes", data: [695, 471] },
+            { stat: "pass accuracy", data: [89, 86] },
+            { stat: "offsides", data: [0, 0] },
+            { stat: "yellow card", data: [1, 0] },
+            { stat: "red card", data: [0, 1] },
+            { stat: "corners", data: [3, 4] },
+        ],
+        events: [
+            {
+                status: "goal",
+                player: "messi",
+                minute: 10,
+                team: 0,
+            },
+            {
+                status: "yellowCard",
+                player: "pique",
+                minute: 18,
+                team: 0,
+            },
+            {
+                status: "goal",
+                player: "ronaldo",
+                minute: 23,
+                team: 1,
+            },
+            {
+                status: "goal",
+                player: "messi",
+                minute: 44,
+                team: 0,
+            },
+            {
+                status: "goal",
+                player: "messi",
+                minute: 52,
+                team: 0,
+            },
+            {
+                status: "subs",
+                player_in: "roberto",
+                player_out: "alba",
+                minute: 55,
+                team: 0,
+            },
+            {
+                status: "subs",
+                player_in: "isco",
+                player_out: "kroos",
+                minute: 55,
+                team: 1,
+            },
+            {
+                status: "subs",
+                player_in: "benzema",
+                player_out: "bale",
+                minute: 59,
+                team: 1,
+            },
+            {
+                status: "subs",
+                player_in: "alcácer",
+                player_out: "rakitić",
+                minute: 66,
+                team: 0,
+            },
+            {
+                status: "goal",
+                player: "suarez",
+                minute: 77,
+                team: 0,
+            },
+            {
+                status: "goal",
+                player: "isco",
+                minute: 89,
+                team: 1,
+            },
+            {
+                status: "yellowCard",
+                player: "isco",
+                minute: 89,
+                team: 1,
+            },
+            {
+                status: "redCard",
+                player: "ramos",
+                minute: 90,
+                team: 1,
+            },
+        ],
+    },
+    {
+        id: 1,
+        live: false,
+        minute: "",
+        match_date: "2020-09-18 20:30:00",
+        match_referee: "Michael Oliver",
+        match_highlight:
+            "https://as5.asset.aparat.com/aparat-video/80aa83c897e9fed8c2b25fced6f5d29318442241-360p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjZlMTAwNzhhZTE0NDc4ZGYzOThmMzU1MWI5ZmNkM2YxIiwiZXhwIjoxNzExODE0MTYwLCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.J4pCb2QxKGNbKA8Eld6peKvetF0zoQ7vyx_1ZkbzFIU",
+        teams: [
+            {
+                team: "manchester city",
+                logoUrl:
+                    "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/a3nyxabgsqlnqfkeg41m6tnpp.png",
+                manager: "Pep Guardiola",
+                lineups: {
+                    formation: "4-3-3",
+                    players: [7, 8],
+                },
+            },
+            {
+                team: "manchester united",
+                logoUrl:
+                    "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/6eqit8ye8aomdsrrq0hk3v7gh.png",
+                manager: "erik ten hag",
+                lineups: {
+                    formation: "4-3-3",
+                    players: [6],
+                },
+            },
+        ],
+        scores: [3, 0],
+        competition: {
+            id: 0,
+            competitionName: "premier league",
+            competitionLogoUrl:
+                "https://uploadkon.ir/uploads/d59630_24PL-logo.png",
+        },
+        stats: [
+            { stat: "shots", data: [14, 6] },
+            { stat: "shots on target", data: [8, 2] },
+            { stat: "possession", data: [55, 45] },
+            { stat: "passes", data: [762, 351] },
+            { stat: "pass accuracy", data: [91, 85] },
+            { stat: "offsides", data: [2, 1] },
+            { stat: "yellow card", data: [1, 2] },
+            { stat: "red card", data: [0, 0] },
+            { stat: "corners", data: [6, 2] },
+        ],
+        events: [
+            {
+                status: "goal",
+                player: "haaland",
+                minute: 24,
+                team: 0,
+            },
+            {
+                status: "yellowCard",
+                player: "rodri",
+                minute: 26,
+                team: 0,
+            },
+            {
+                status: "goal",
+                player: "foden",
+                minute: 40,
+                team: 0,
+            },
+            {
+                status: "subs",
+                player_in: "alvarez",
+                player_out: "doku",
+                minute: 66,
+                team: 0,
+            },
+            {
+                status: "goal",
+                player: "alvarez",
+                minute: 74,
+                team: 0,
+            },
+            {
+                status: "subs",
+                player_in: "garnacho",
+                player_out: "rashford",
+                minute: 75,
+                team: 1,
+            },
+            {
+                status: "subs",
+                player_in: "walker",
+                player_out: "ake",
+                minute: 77,
+                team: 0,
+            },
+            {
+                status: "yellowCard",
+                player: "garnacho",
+                minute: 82,
+                team: 1,
+            },
+            {
+                status: "yellowCard",
+                player: "bruno",
+                minute: 88,
+                team: 1,
+            },
+        ],
+    },
+];

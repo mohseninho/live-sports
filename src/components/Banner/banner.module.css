@@ -34,7 +34,7 @@
     right: 5%;
 }
 
-@media screen and (max-width : 800px){
+@media screen and (max-width : 1000px){
     .bannerWrapper{
         height: 200px;
     }
@@ -45,7 +45,7 @@
     }
 
     .next{
-        right: 1%;
+        right: 2%;
     }
     
     .prev{
@@ -64,10 +64,10 @@
     }
 
     .next{
-        right: 1%;
+        right: 2%;
     }
     
     .prev{
-        right: 4%;
+        right: 7%;
     }
 }

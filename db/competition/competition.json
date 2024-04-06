@@ -1,0 +1,16 @@
+{
+    "data":[
+        {
+            "id" : 1,
+            "competitionName" : "premier league",
+            "standings" : [3,4],
+            "competitionLogoUrl": "https://uploadkon.ir/uploads/d59630_24PL-logo.png"
+        },
+        {
+            "id" : 2,
+            "competitionName" : "laliga",
+            "standings" : [1,2],
+            "competitionLogoUrl": "https://uploadkon.ir/uploads/39a727_24LL-logo.png"
+        }
+    ]
+}

@@ -6,6 +6,7 @@ import style from "./players.module.css"
 import { useEffect, useState } from "react";
 import axios from "axios";
 import pitch from "../../assets/images/footballPitch.png"
+import { data } from "../../data/players/players";
 function Players(){
 
     const params = useParams();
@@ -14,13 +15,15 @@ function Players(){
 
     useEffect(()=>{
         setIsLoading(true);
-        axios.get(`http://localhost:9000/data/${params.id}`).then(result=>{
-            setPlayerData(result.data);
-            setIsLoading(false);
-        }).catch(error=>{
-            console.log(error);
-            setIsLoading(false);
-        })
+        setPlayerData(data[params.id]);
+        setIsLoading(false);
+        // axios.get(`http://localhost:9000/data/${params.id}`).then(result=>{
+        //     setPlayerData(result.data);
+        //     setIsLoading(false);
+        // }).catch(error=>{
+        //     console.log(error);
+        //     setIsLoading(false);
+        // })
     },[])
 
     function position(pos){

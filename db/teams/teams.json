@@ -1,20 +1,40 @@
 {
     "data":[
         {
-            "team_id" : 1,
+            "id" : 1,
             "team_name" : "barcelona",
-            "team_logo" : "",
+            "team_logo" : "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/agh9ifb2mw3ivjusgedj7c3fe.png",
             "team_manager" : "xavi hernandez",
             "team_ranking" : "4",
-            "team_country" : "spain"
+            "team_country" : "spain",
+            "result" : [30 , 22 , 5 , 3 , 72 , 24]
         },
         {
-            "team_id" : 2,
+            "id" : 2,
             "team_name" : "real madrid",
-            "team_logo" : "",
+            "team_logo" : "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/3kq9cckrnlogidldtdie2fkbl.png",
             "team_manager" : "carlo ancelotti",
             "team_ranking" : "1",
-            "team_country" : "spain"
+            "team_country" : "spain",
+            "result" : [30 , 20 , 8 , 2 , 68 , 28]
+        },
+        {
+            "id" : 3,
+            "team_name" : "machester city",
+            "team_logo" : "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/a3nyxabgsqlnqfkeg41m6tnpp.png",
+            "team_manager" : "pep guardiola",
+            "team_ranking" : "2",
+            "team_country" : "england",
+            "result" : [30 , 21 , 5 , 4 , 72 , 24]
+        },
+        {
+            "id" : 4,
+            "team_name" : "manchester united",
+            "team_logo" : "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/6eqit8ye8aomdsrrq0hk3v7gh.png",
+            "team_manager" : "erik ten hag",
+            "team_ranking" : "9",
+            "team_country" : "england",
+            "result" : [30 , 18 , 5 , 7 , 68 , 28]
         }
     ]
 }
