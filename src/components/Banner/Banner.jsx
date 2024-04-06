@@ -1,62 +1,53 @@
 import { useEffect } from "react";
-import style from "./banner.module.css"
+import style from "./banner.module.css";
 import axios from "axios";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleArrowRight ,faCircleArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import {faCircleArrowRight,faCircleArrowLeft,} from "@fortawesome/free-solid-svg-icons";
 import { data } from "../../data/banners/banners";
-function Banner(){
-    const [banners , setBanners] = useState([]);
-    let [current , setCurrent] = useState(0);
-    let slideInterval;
-    const slideTime = 4000;
-    const isAuto = true;
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
-    function classNameSetter(index){
-        return(index === current ? (style.current) : (style.slide));
-    }
+function Banner() {
+    const [banners, setBanners] = useState([]);
 
-    function next(){
-        setCurrent(current === banners.length - 1 ? 0 : current + 1);
-    }
-
-    function prev(){
-        setCurrent(current === 0 ? banners.length - 1 : current - 1);
-    }
-
-    function autoSlide(){
-        slideInterval = setInterval(next , slideTime);
-    }
-
-    useEffect(()=>{
+    useEffect(() => {
         setBanners(data);
         // axios.get("http://localhost:7000/data").then(result=>{
         //     setBanners(result.data);
         // })
-
-        setCurrent(0);
-    },[])
-
-    useEffect(()=>{
-        if(isAuto){
-            autoSlide();
-        }
-        return () => clearInterval(slideInterval);
-    } , [current])
+    }, []);
 
 
-
-    return(
-        <div className={style.bannerWrapper}>
-            <FontAwesomeIcon className={style.next} icon={faCircleArrowRight} onClick={next} />
+    return (
+        <Swiper
+            modules={[Navigation, Pagination , Autoplay]}
+            spaceBetween={0}
+            slidesPerView={1}
+            navigation
+            autoplay = {true}
+            pagination={{ clickable: true }}
+            className={style.slider}
+        >
+            
+     
             {
-                banners.map((banner , index)=>(
-                    <img className={classNameSetter(index)} key={index} src={banner.url} alt="slide" />
-                ))
+                banners.map((banner , idx)=>(
+                            
+                    <SwiperSlide key={idx}><img className={style.slide} src={banner.url} alt="" /></SwiperSlide>
+
+                ))  
             }
-            <FontAwesomeIcon className={style.prev} icon={faCircleArrowLeft} onClick={prev} />
-        </div>
-    )
+         
+            
+
+            {/* <SwiperSlide className={style.slide}><img src={banners.url} alt="" /></SwiperSlide> */}
+        </Swiper>
+    );
 }
 
 export default Banner;
