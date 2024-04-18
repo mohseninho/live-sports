@@ -11,16 +11,17 @@
     color: white;
     position: relative;
     font-size: 16px;
+    font-family: "PT Sans", sans-serif;
 }
 
-.info{
+.info {
     width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.links{
+.links {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -31,16 +32,11 @@
     padding: 0 20px;
 }
 
-.links p{
-    transition: 0.2s;
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-}
-
-.links p:hover{
+.links p:hover {
     border-bottom: 2px solid chocolate;
 }
 
-.socialMedia{
+.socialMedia {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -49,59 +45,70 @@
     padding: 0 20px;
 }
 
-.logos{
+.logos {
     margin-top: 10px;
 }
 
-.logos *{
+.logos * {
     width: 40px;
     height: 40px;
     cursor: pointer;
     margin-right: 5px;
 }
 
-.description{
+.description {
     position: absolute;
     text-align: center;
     bottom: 10px;
 }
 
+.links p {
+    transition: 0.2s;
+    font-size: 1em;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+}
+
+.socialMedia p {
+    font-size: 1em;
+}
+
 @media screen and (max-width : 800px) {
-    .footer{
+    .footer {
         font-size: 0.85em;
         height: 200px;
     }
 
-    .info{
+    .info {
         width: 90%;
     }
 
-    .description{
+    .description {
         bottom: 5px;
     }
 }
 
 @media screen and (max-width : 600px) {
-    .footer{
+    .footer {
         font-size: 0.7em;
         height: 150px;
         padding-top: 30px;
     }
 
-    .info{
+    .info {
         width: 90%;
     }
 
-    .links , .socialMedia{
+    .links,
+    .socialMedia {
         padding: 0 10px;
     }
 
-    .logos *{
+    .logos * {
         width: 25px;
         height: 25px;
     }
 
-    .description{
+    .description {
         font-size: 0.8em;
         bottom: 5px;
     }

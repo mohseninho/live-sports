@@ -31,8 +31,8 @@ function Login() {
                     <button className={style.signApple}><FontAwesomeIcon icon={faApple} size="lg"></FontAwesomeIcon> sign in with apple</button>
                     <p>or</p>
                     <form action="#" className={style.loginForm}>
-                        <input type="text" className={style.emailInput} placeholder="Email" />
-                        <input type="password" className={style.passwordInput} placeholder="Password" />
+                        <input type="text" className={style.emailInput} placeholder="Email" required />
+                        <input type="password" className={style.passwordInput} placeholder="Password" required />
                         <div className={style.keepMeCheckBox}>
                             <label><input type="checkbox" name="checkbox" value="value" />keep me signed in</label>
                         </div>

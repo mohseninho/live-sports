@@ -1,4 +1,4 @@
-.wrapper{
+.wrapper {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -11,7 +11,7 @@
 }
 
 
-.resultWrapper{
+.resultWrapper {
     width: 80%;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 25px;
@@ -22,24 +22,31 @@
     padding: 10px 0;
 }
 
-.team_a , .team_b{
+.team_a,
+.team_b {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.team_a_logo , .team_b_logo{
+.team_a_name,
+.team_b_name {
+    font-size: 1em
+}
+
+.team_a_logo,
+.team_b_logo {
     width: 60px;
     height: 60px;
     margin: 0 10px;
 }
 
-.result{
+.result {
     font-size: 1.5em;
     margin: 0px 10px;
 }
 
-.matchInfo{
+.matchInfo {
     width: 80%;
     display: flex;
     justify-content: center;
@@ -47,7 +54,7 @@
     gap: 15px;
 }
 
-.events{
+.events {
     width: 60%;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
@@ -56,7 +63,7 @@
     padding: 10px;
 }
 
-.sideBar{
+.sideBar {
     width: 40%;
     display: flex;
     justify-content: center;
@@ -65,7 +72,7 @@
     gap: 15px;
 }
 
-.details{
+.details {
     width: 100%;
     min-height: 100px;
     background: rgba(255, 255, 255, 0.4);
@@ -74,28 +81,30 @@
     height: 100%;
 }
 
-.competition ,.match_date ,.match_referee{
+.competition,
+.match_date,
+.match_referee {
     height: 20px;
     margin: 10px 0;
 }
 
-.competition{
+.competition {
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.competitions_logo{
+.competitions_logo {
     width: 40px;
     height: 40px;
     margin-left: 10px;
 }
 
-.highlight{
+.highlight {
     width: 100%;
     min-height: 200px;
     background: rgba(255, 255, 255, 0.4);
-    border-radius: 25px;    
+    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,13 +112,13 @@
     padding: 10px 0 0 0;
 }
 
-.highlight_video{
+.highlight_video {
     width: 95%;
     margin: 10px;
     border-radius: 15px;
 }
 
-.stats{
+.stats {
     width: 100%;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
@@ -122,11 +131,14 @@
     padding: 10px;
 }
 
-.event_title , .detail_title , .stats_title ,.highlight_title{
+.event_title,
+.detail_title,
+.stats_title,
+.highlight_title {
     font-size: 1.5em;
 }
 
-.lineups{
+.lineups {
     width: 80%;
     background: rgba(255, 255, 255, 0.4);
     border-radius: 25px;
@@ -138,7 +150,7 @@
     padding: 10px 10px;
 }
 
-.team_a_players{
+.team_a_players {
     width: 50%;
     display: flex;
     align-items: center;
@@ -147,7 +159,7 @@
     position: relative;
 }
 
-.team_b_players{
+.team_b_players {
     width: 50%;
     display: flex;
     align-items: center;
@@ -156,7 +168,7 @@
     position: relative;
 }
 
-.player{
+.player {
     width: 50%;
     display: flex;
     justify-content: center;
@@ -165,29 +177,32 @@
 
 @media screen and (max-width : 800px) {
 
-    .resultWrapper , .matchInfo , .lineups{
+    .resultWrapper,
+    .matchInfo,
+    .lineups {
         width: 95%;
     }
 
-    .player{
+    .player {
         width: 65%;
     }
 
-    .team_a_logo , .team_b_logo{
+    .team_a_logo,
+    .team_b_logo {
         width: 40px;
         height: 40px;
         margin: 0 4px;
     }
-    
-    .matchInfo{
+
+    .matchInfo {
         flex-direction: column;
     }
 
-    .events{
+    .events {
         width: 100%;
     }
 
-    .sideBar{
+    .sideBar {
         width: 100%;
     }
 }
@@ -196,68 +211,71 @@
 
 @media screen and (max-width : 600px) {
 
-    .matchInfo , .sideBar{
+    .matchInfo,
+    .sideBar {
         gap: 8px;
     }
 
-    .player{
+    .player {
         width: 100%;
     }
 
-    .lineups ,.resultWrapper{
+    .lineups,
+    .resultWrapper {
         margin: 8px 0;
     }
-    .resultWrapper{
+
+    .resultWrapper {
         font-size: 0.7em;
     }
 
-    .result{
+    .result {
         font-size: 1.4em;
     }
 
-    .result{
+    .result {
         margin: 0px 2px;
     }
-    
-    .matchInfo{
+
+    .matchInfo {
         flex-direction: column;
     }
 
-    .events{
+    .events {
         width: 100%;
     }
 
-    .sideBar{
+    .sideBar {
         width: 100%;
     }
 }
 
 @media screen and (max-width : 400px) {
 
-    .resultWrapper{
+    .resultWrapper {
         font-size: 0.55em;
     }
 
-    .result{
+    .result {
         margin: 0px 2px;
     }
 
-    .team_a_logo , .team_b_logo{
+    .team_a_logo,
+    .team_b_logo {
         width: 30px;
         height: 30px;
         margin: 0 4px;
     }
-    
-    .matchInfo{
+
+    .matchInfo {
         flex-direction: column;
     }
 
-    .events{
+    .events {
         width: 100%;
     }
 
-    .sideBar{
+    .sideBar {
         width: 100%;
     }
 }
-

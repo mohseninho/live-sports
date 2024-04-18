@@ -1,47 +1,60 @@
-.slider{
+.slider {
     width: 100%;
     margin: 5px 0;
+    height: 400px;
 }
 
-.slide{
+.slide {
     width: 100%;
     height: 100%;
 }
 
-@media screen and (max-width : 1000px){
-    .bannerWrapper{
+@media screen and (max-width : 1000px) {
+
+    .slider {
+        height: 300px;
+    }
+
+    .bannerWrapper {
         height: 200px;
     }
 
-    .next , .prev{
+    .next,
+    .prev {
         width: 25px;
         height: 25px;
     }
 
-    .next{
+    .next {
         right: 2%;
     }
-    
-    .prev{
+
+    .prev {
         right: 6%;
     }
 }
 
-@media screen and (max-width : 600px){
-    .bannerWrapper{
+@media screen and (max-width : 600px) {
+
+    .slider {
+        height: 150px;
+    }
+
+    .bannerWrapper {
         height: 120px;
     }
 
-    .next , .prev{
+    .next,
+    .prev {
         width: 15px;
         height: 15px;
     }
 
-    .next{
+    .next {
         right: 2%;
     }
-    
-    .prev{
+
+    .prev {
         right: 7%;
     }
 }

@@ -83,4 +83,13 @@
     .menu li {
         font-size: 0.7em;
     }
+
+    .loginBtn {
+        width: 60px;
+        height: 25px;
+        border-radius: 999px;
+        border: none;
+        font-size: 0.7em;
+        font-weight: bold;
+    }
 }
