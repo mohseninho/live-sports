@@ -1,0 +1,271 @@
+* {
+    font-family: "Poppins", sans-serif;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+p {
+    font-family: "Manrope", sans-serif;
+    font-size: 15px;
+}
+
+label {
+    cursor: pointer;
+}
+
+button {
+    width: 90%;
+    height: 50px;
+    margin: 5px 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 0 1px #888;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-top: 10px;
+}
+
+.wrapper {
+    width: 70%;
+    height: 90%;
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoSide {
+    flex: 1;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    padding: 40px;
+    text-transform: capitalize;
+}
+
+.info h2 {
+    font-family: "Manrope", sans-serif;
+    font-size: 40px;
+    line-height: 45px;
+}
+
+.info ul {
+    margin-top: 25px;
+    line-height: 35px;
+}
+
+
+.logos img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.formSide {
+    flex: 1;
+    height: 100%;
+    padding: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 0 15px 15px 0;
+}
+
+.loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+}
+
+
+.emailInput,
+.passwordInput {
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 1px solid #666;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.keepMeCheckBox {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-transform: capitalize;
+}
+
+.keepMeCheckBox input {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.signApple,
+.signFacebook,
+.signGoogle,
+.loginBtn,
+.signupBtn {
+    transition: 0.4s;
+}
+
+.signFacebook {
+    background-color: #3B5998;
+    color: #fff;
+}
+
+.signFacebook:hover {
+    background-color: #4768b0;
+}
+
+.signGoogle {
+    background-color: #fff;
+    color: #000;
+}
+
+.signGoogle:hover {
+    background-color: #f1f1f1;
+}
+
+.signApple {
+    background-color: #000;
+    color: #fff;
+}
+
+.signApple:hover {
+    background-color: #272727;
+}
+
+.loginBtn {
+    background-color: #0071D8;
+    color: #fff;
+}
+
+.loginBtn:hover {
+    background-color: #0a7fec;
+}
+
+.signupBtn {
+    background-color: #fff;
+    color: #0071D8;
+}
+
+.signupBtn:hover {
+    background-color: #0071D8;
+    color: #fff;
+}
+
+@media screen and (max-width : 1000px) {
+    .wrapper {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 800px) {
+    .wrapper {
+        width: 90%;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .infoSide {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+        padding: 20px 50px;
+    }
+
+    .formSide {
+        width: 100%;
+        border-radius: 0 0 15px 15px;
+        padding: 20px 50px;
+    }
+
+    .info h2 {
+        font-size: 20px;
+    }
+
+    .info ul {
+        margin-top: 5px;
+        font-size: 12px;
+        line-height: 25px;
+    }
+
+    .emailInput,
+    .passwordInput {
+        height: 40px;
+    }
+
+    button {
+        height: 45px;
+    }
+
+    .logos {
+        display: none;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .infoSide {
+        justify-content: center;
+        padding: 20px 20px;
+    }
+
+    .formSide {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .loginForm{
+        width: 100%;
+    }
+
+    .info h2 {
+        font-size: 20px;
+    }
+
+    .info ul {
+        display: none;
+    }
+
+    button {
+        width: 100%;
+    }
+}

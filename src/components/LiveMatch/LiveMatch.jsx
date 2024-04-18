@@ -5,7 +5,9 @@ function LiveMatch(props){
             <div className={style.competition}>
                 <img className={style.competitionImg} src={props.data.competition.competitionLogoUrl} alt="competition logo" />
             </div>
-            <p className={style.matchStatus}>{props.data.live ? `${props.data.minute}'` : "FT"}</p>
+            <div className={style.matchStatus}>
+                <p>{props.data.live ? `${props.data.minute}'` : "FT"}</p>
+            </div>
             <div className={style.matchInfo}>
                 <div className={style.team_A}>
                     <p className={style.team_A_name}>{props.data.teams[0].team}</p>

@@ -8,6 +8,7 @@ import Match from "./pages/match/Match";
 import AboutUs from "./pages/aboutUs/AboutUs";
 import Players from "./pages/players/Players";
 import Competition from "./pages/competition/Competition";
+import Login from "./pages/Login/Login";
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
                 <Routes>
                     <Route path="*" element={<NotFound />} />
                     <Route path="/" element={<Main />} />
+                    <Route path="/login" element={<Login />} />
                     <Route path="/match/:id" element={<Match />} />
                     <Route path="/about" element={<AboutUs />} />
                     <Route path="/players/:id" element={<Players />} />
