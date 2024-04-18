@@ -57,7 +57,7 @@ function Match(){
                 </div>
                 <div className={style.matchInfo}>
                     <div className={style.events}>
-                        <p className={style.event_title}>Key Events</p>
+                        <h2 className={style.event_title}>Key Events</h2>
                         {
                             isLoading ? <Loading /> : (
                                 <>
@@ -73,7 +73,7 @@ function Match(){
                     </div>
                     <div className={style.sideBar}>
                         <div className={style.details}>
-                            <p className={style.detail_title}>Details</p>
+                            <h2 className={style.detail_title}>Details</h2>
                             {
                                 isLoading ? <Loading /> :(
                                     <>
@@ -92,7 +92,7 @@ function Match(){
                         </div>
 
                         <div className={style.stats}>
-                            <p className={style.stats_title}>stats</p>
+                            <h2 className={style.stats_title}>stats</h2>
                             {
                                 isLoading ? <Loading /> :(
                                     <>
@@ -107,7 +107,7 @@ function Match(){
                         </div>
 
                         <div className={style.highlight}>
-                            <p className={style.highlight_title}>highlight</p>
+                            <h2 className={style.highlight_title}>highlight</h2>
                             {
                                 isLoading ? <Loading /> :(
                                     <>

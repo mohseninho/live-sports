@@ -1,12 +1,16 @@
-.wrapper{
+.wrapper {
     width: 100%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: start;
+}
+
+.wrapper p {
     font-size: 16px;
 }
-.container{
+
+.container {
     width: 90%;
     margin: 20px 0;
     border-radius: 25px;
@@ -16,7 +20,7 @@
     gap: 20px;
 }
 
-.playerProfile{
+.playerProfile {
     flex: 1;
     padding: 20px;
     min-height: 200px;
@@ -28,7 +32,7 @@
     flex-direction: column;
 }
 
-.playerState{
+.playerState {
     flex: 3;
     padding: 20px;
     min-height: 200px;
@@ -40,14 +44,14 @@
     gap: 20px;
 }
 
-.profile{
+.profile {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     border: 5px solid rgba(255, 255, 255, 0.4);
 }
 
-.info{
+.info {
     margin: 5px 0;
     display: flex;
     justify-content: center;
@@ -55,22 +59,31 @@
     flex-direction: column;
 }
 
-.info p{
+.info p {
     margin: 2px 0;
 }
 
-.position{
+.position {
     width: 300px;
     position: relative;
 }
 
-.pitch{
+.pitch {
     width: 100%;
     height: 100%;
     border-radius: 25px;
-} 
+}
 
-.rw , .lw , .cb , .lb ,.rb , .st , .cm , .amf , .dmf , .gk{
+.rw,
+.lw,
+.cb,
+.lb,
+.rb,
+.st,
+.cm,
+.amf,
+.dmf,
+.gk {
     width: 50px;
     height: 50px;
     background: coral;
@@ -84,22 +97,22 @@
     transition: 0.2s;
 }
 
-.position div:hover{
+.position div:hover {
     width: 55px;
     height: 55px;
 }
 
-.lw{
+.lw {
     top: 17%;
     left: 12%;
 }
 
-.rw{
+.rw {
     top: 17%;
     right: 12%;
 }
 
-.cb{
+.cb {
     bottom: 17%;
     left: 0;
     right: 0;
@@ -107,7 +120,7 @@
     margin-right: auto;
 }
 
-.st{
+.st {
     top: 14%;
     left: 0;
     right: 0;
@@ -115,17 +128,17 @@
     margin-right: auto;
 }
 
-.rb{
+.rb {
     bottom: 17%;
-    right: 12%; 
+    right: 12%;
 }
 
-.lb{
+.lb {
     bottom: 17%;
     left: 12%;
 }
 
-.cm{
+.cm {
     top: 0;
     bottom: 0;
     right: 0;
@@ -136,7 +149,7 @@
     margin-left: auto;
 }
 
-.gk{
+.gk {
     bottom: 10%;
     right: 0;
     left: 0;
@@ -144,7 +157,7 @@
     margin-left: auto;
 }
 
-.dmf{
+.dmf {
     bottom: 30%;
     right: 0;
     left: 0;
@@ -152,7 +165,7 @@
     margin-left: auto;
 }
 
-.amf{
+.amf {
     top: 30%;
     right: 0;
     left: 0;
@@ -161,30 +174,39 @@
 }
 
 @media screen and (max-width : 800px) {
-    .container{
+    .container {
         width: 95%;
     }
 
-    .playerProfile{
+    .playerProfile {
         font-size: 0.8em;
     }
 
-    .profile{
+    .profile {
         width: 100px;
         height: 100px;
     }
 
-    .position{
+    .position {
         width: 200px;
     }
 
-    .rw , .lw , .cb , .lb ,.rb , .st , .cm , .amf , .dmf , .gk{
+    .rw,
+    .lw,
+    .cb,
+    .lb,
+    .rb,
+    .st,
+    .cm,
+    .amf,
+    .dmf,
+    .gk {
         width: 40px;
         height: 40px;
         font-size: 0.6em;
     }
 
-    .position div:hover{
+    .position div:hover {
         width: 45px;
         height: 45px;
     }
@@ -193,31 +215,32 @@
 
 
 @media screen and (max-width : 600px) {
-    
-    .container{
+
+    .container {
         flex-direction: column;
         align-items: center;
     }
 
-    .playerProfile{
-        width: fit-content;
+    .playerProfile {
+        width: 95%;
     }
 
-    .playerState{
+    .playerState {
         width: 95%;
         font-size: 0.85em;
         padding: 10px;
     }
 
-    .playerProfile{
+    .playerProfile {
         font-size: 0.75em;
         padding: 10px;
     }
-    .position div{
+
+    .position div {
         font-size: 0.8em;
     }
 
-    .profile{
+    .profile {
         width: 80px;
         height: 80px;
     }

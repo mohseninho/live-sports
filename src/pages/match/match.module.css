@@ -10,6 +10,13 @@
     overflow: hidden;
 }
 
+.wrapper p {
+    font-size: 1em;
+}
+
+.wrapper h2 {
+    font-size: 1.5em;
+}
 
 .resultWrapper {
     width: 80%;
@@ -22,6 +29,10 @@
     padding: 10px 0;
 }
 
+.result{
+    margin: 0 4px;
+}
+
 .team_a,
 .team_b {
     display: flex;
@@ -29,9 +40,8 @@
     align-items: center;
 }
 
-.team_a_name,
-.team_b_name {
-    font-size: 1em
+.resultWrapper p {
+    font-size: 1.25em
 }
 
 .team_a_logo,
@@ -39,11 +49,6 @@
     width: 60px;
     height: 60px;
     margin: 0 10px;
-}
-
-.result {
-    font-size: 1.5em;
-    margin: 0px 10px;
 }
 
 .matchInfo {
@@ -135,7 +140,7 @@
 .detail_title,
 .stats_title,
 .highlight_title {
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .lineups {
@@ -225,16 +230,8 @@
         margin: 8px 0;
     }
 
-    .resultWrapper {
-        font-size: 0.7em;
-    }
-
-    .result {
-        font-size: 1.4em;
-    }
-
-    .result {
-        margin: 0px 2px;
+    .resultWrapper p {
+        font-size: 1em;
     }
 
     .matchInfo {
@@ -251,13 +248,8 @@
 }
 
 @media screen and (max-width : 400px) {
-
-    .resultWrapper {
-        font-size: 0.55em;
-    }
-
-    .result {
-        margin: 0px 2px;
+    .resultWrapper p {
+        font-size: 0.9em;
     }
 
     .team_a_logo,
