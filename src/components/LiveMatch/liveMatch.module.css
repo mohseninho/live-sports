@@ -8,6 +8,7 @@
     align-items: center;
     padding: 0 15px;
     font-size: 16px;
+    text-transform: uppercase;
 }
 
 .competition{
@@ -29,6 +30,10 @@
     justify-content: center;
     align-items: center;
     width: 80%;
+}
+
+.matchStatus p{
+    font-size: 1em;
 }
 
 
@@ -72,10 +77,6 @@
     font-size: 1.2em;
     font-weight: bold;
     margin: 0 5px;
-}
-
-p{
-    text-transform: uppercase;
 }
 
 .live_tv{

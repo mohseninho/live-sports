@@ -1,28 +1,43 @@
-.wrapper{
+.wrapper {
     width: 90%;
     height: 35px;
-    border-bottom: 1px solid black;
+    border-top: 1px solid black;
     display: flex;
     justify-content: start;
     align-items: center;
-    margin: 5px 0;
+    padding: 20px 0;
 }
 
-.teamInfo{
+.borderNan {
+    width: 90%;
+    height: 35px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 20px 0;
+}
+
+
+.teamInfo {
     flex: 2;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.teamResult{
+.teamResult {
     flex: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.teamLogo{
+.teamResult p{
+    flex: 1;
+    text-align: center;
+}
+
+.teamLogo {
     width: 30px;
     height: 30px;
     margin: 0 10px;
