@@ -1,0 +1,23 @@
+.openProfile ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 5px;
+    text-transform: capitalize;
+}
+
+.openProfile {
+    position: absolute;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    top: 45px;
+    left: calc(-50px + 20px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom right , rgba(255,255,255,0.7) , rgba(255,255,255,0.2));
+}

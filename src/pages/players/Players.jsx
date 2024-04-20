@@ -81,6 +81,7 @@ function Players(){
                                     <>
                                         <p className={style.games}>{`games : ${playerData.player_games}`}</p>
                                         <p className={style.goals}>{`goals : ${playerData.player_goals}`}</p>
+                                        <p className={style.assists}>{`assists : ${playerData.player_assists}`}</p>
                                     </>
                                 ) 
                             }

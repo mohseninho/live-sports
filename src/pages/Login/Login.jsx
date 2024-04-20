@@ -1,7 +1,34 @@
 import style from "./login.module.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle, faFacebook, faApple } from "@fortawesome/free-brands-svg-icons";
+import { useContext, useState } from "react";
+import { AppContext } from "../../App";
+import { Users_data } from "../../data/users/Users"
+
 function Login() {
+    const { setIsLogin, setUser } = useContext(AppContext);
+
+    const [userData, setUserData] = useState({
+        email: "",
+        password: ""
+    });
+
+    function loginFunc() {
+        Users_data.forEach((user) => {
+            if (user.email === userData.email && user.password === userData.password) {
+                setUser(user);
+                setIsLogin(true);
+            }
+        })
+    }
+
+    const handleChange = (e) => {
+        setUserData((prev) => ({
+            ...prev,
+            [e.target.name]: e.target.value
+        }));
+    }
+
     return (
         <div className={style.container}>
             <div className={style.wrapper}>
@@ -31,13 +58,13 @@ function Login() {
                     <button className={style.signApple}><FontAwesomeIcon icon={faApple} size="lg"></FontAwesomeIcon> sign in with apple</button>
                     <p>or</p>
                     <form action="#" className={style.loginForm}>
-                        <input type="text" className={style.emailInput} placeholder="Email" required />
-                        <input type="password" className={style.passwordInput} placeholder="Password" required />
+                        <input name="email" type="text" className={style.emailInput} placeholder="Email" onChange={handleChange} required />
+                        <input name="password" type="password" className={style.passwordInput} placeholder="Password" onChange={handleChange} required />
                         <div className={style.keepMeCheckBox}>
                             <label><input type="checkbox" name="checkbox" value="value" />keep me signed in</label>
                         </div>
                     </form>
-                    <button type="submit" className={style.loginBtn}>login</button>
+                    <button onClick={loginFunc} className={style.loginBtn}>login</button>
                     <p>don't have an account?</p>
                     <button className={style.signupBtn}>signup</button>
                 </div>

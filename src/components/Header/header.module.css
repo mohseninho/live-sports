@@ -8,10 +8,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 50px;
+    padding: 0px 60px;
     background-color: rgb(0, 0, 0);
     border-bottom: 4px solid red;
     font-size: 16px;
+    color: #fff;
 }
 
 .nav {
@@ -53,6 +54,22 @@
 
 .menu li:hover {
     border-bottom: 2px solid chocolate;
+}
+
+.profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+}
+
+.avatar{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
 }
 
 @media screen and (max-width : 800px) {
