@@ -61,15 +61,15 @@
     height: 40px;
     border-radius: 50%;
     background-color: #fff;
-    cursor: pointer;
     position: relative;
     user-select: none;
 }
 
-.avatar{
+.avatar {
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 @media screen and (max-width : 800px) {

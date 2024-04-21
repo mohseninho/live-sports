@@ -14,12 +14,20 @@ function Login() {
     });
 
     function loginFunc() {
-        Users_data.forEach((user) => {
-            if (user.email === userData.email && user.password === userData.password) {
-                setUser(user);
+        if (userData.email != "" && userData.password != "") {
+            const _user = Users_data.find((user) => user.email === userData.email);
+            if (!_user) {
+                alert("user not found!");
+            } else if (_user.password === userData.password) {
+                setUser(_user);
                 setIsLogin(true);
+            } else {
+                alert("incorrect password!");
             }
-        })
+        } else {
+            alert("enter your info!");
+        }
+
     }
 
     const handleChange = (e) => {
