@@ -48,3 +48,16 @@
     margin: 15px 0;
     padding: 10px 0;
 }
+
+@media screen and (max-width:600px) {
+    .wrapper p {
+        font-size: 0.8em;
+    }
+    .standings {
+        width: 95%;
+    } 
+
+    .title p{
+        font-size: 0.65em;
+    }
+}

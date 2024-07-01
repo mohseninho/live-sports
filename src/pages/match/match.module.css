@@ -7,11 +7,8 @@
     font-weight: bold;
     text-transform: uppercase;
     font-size: 16px;
+    font-weight: normal;
     overflow: hidden;
-}
-
-.wrapper p {
-    font-size: 1em;
 }
 
 .wrapper h2 {
@@ -180,6 +177,10 @@
     align-items: center;
 }
 
+.team_a_short_name , .team_b_short_name{
+    display: none;
+}
+
 @media screen and (max-width : 800px) {
 
     .resultWrapper,
@@ -250,6 +251,14 @@
 @media screen and (max-width : 400px) {
     .resultWrapper p {
         font-size: 0.9em;
+    }
+
+    .team_a_name , .team_b_name{
+        display: none;
+    }
+
+    .team_a_short_name , .team_b_short_name{
+        display: block;
     }
 
     .team_a_logo,

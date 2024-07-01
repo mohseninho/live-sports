@@ -32,7 +32,7 @@
     align-items: center;
 }
 
-.teamResult p{
+.teamResult p {
     flex: 1;
     text-align: center;
 }
@@ -41,4 +41,33 @@
     width: 30px;
     height: 30px;
     margin: 0 10px;
+}
+
+.team_short_name{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .teamLogo {
+        width: 25px;
+        height: 25px;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .teamLogo {
+        width: 20px;
+        height: 20px;
+        margin: 0 5px;
+    }
+
+    .team_short_name {
+        display: block;
+    }
+
+    .teamName {
+        display: none;
+    }
 }

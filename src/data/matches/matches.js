@@ -10,6 +10,7 @@ export const data = [
         teams: [
             {
                 team: "barcelona",
+                short_name: "FCB",
                 logoUrl:
                     "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/agh9ifb2mw3ivjusgedj7c3fe.png",
                 manager: "xavi",
@@ -20,6 +21,7 @@ export const data = [
             },
             {
                 team: "real madrid",
+                short_name: "RMA",
                 logoUrl:
                     "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/3kq9cckrnlogidldtdie2fkbl.png",
                 manager: "xavi",
@@ -143,6 +145,7 @@ export const data = [
         teams: [
             {
                 team: "manchester city",
+                short_name: "MCI",
                 logoUrl:
                     "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/a3nyxabgsqlnqfkeg41m6tnpp.png",
                 manager: "Pep Guardiola",
@@ -153,6 +156,7 @@ export const data = [
             },
             {
                 team: "manchester united",
+                short_name: "MUN",
                 logoUrl:
                     "https://cdn.sportfeeds.io/sdl/images/team/crest/medium/6eqit8ye8aomdsrrq0hk3v7gh.png",
                 manager: "erik ten hag",

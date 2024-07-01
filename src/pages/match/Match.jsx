@@ -43,6 +43,7 @@ function Match(){
                         isLoading ? <Loading /> : (
                         <>
                             <div className={style.team_a}>
+                                <p className={style.team_a_short_name}>{matchData.teams[0].short_name}</p>  
                                 <p className={style.team_a_name}>{matchData.teams[0].team}</p>  
                                 <img className={style.team_a_logo} src={matchData.teams[0].logoUrl} alt="" />
                             </div>
@@ -50,6 +51,7 @@ function Match(){
                             <div className={style.team_b}>
                                 <img className={style.team_b_logo} src={matchData.teams[1].logoUrl} alt="" />
                                 <p className={style.team_b_name}>{matchData.teams[1].team}</p>  
+                                <p className={style.team_b_short_name}>{matchData.teams[1].short_name}</p>  
                             </div>
                         </>
                         )

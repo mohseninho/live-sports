@@ -4,11 +4,13 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    min-height: 100vh;
+    min-height: 100dvh;
     background-attachment: fixed;
+    scroll-behavior: smooth;
 }
 
-.wrapper{
+.wrapper {
     max-width: 1800px;
     margin: 0 auto;
+
 }

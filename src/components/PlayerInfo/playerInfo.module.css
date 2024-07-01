@@ -45,7 +45,7 @@
     }
 
     .playerName{
-        font-size: 0.75em;
+        font-size: 0.8em;
     }
 
     .playerImg{
@@ -65,11 +65,6 @@
         overflow: hidden;
     }
 
-    .playerName{
-        font-size: 0.75em;
-        height: 100%;
-    }
-
     .playerNumber{
         display: none;
     }
@@ -78,5 +73,19 @@
         width: 35px;
         height: 35px;
         margin-right: 5px;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    
+    .wrapper{
+        padding: 0;
+    }
+    .playerName{
+        font-size: 0.65em;
+    }
+
+    .playerImg{
+        margin-right: 2px;
     }
 }

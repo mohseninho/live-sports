@@ -10,6 +10,7 @@ import Players from "./pages/players/Players";
 import Competition from "./pages/competition/Competition";
 import Login from "./pages/Login/Login";
 import { createContext, useState } from "react";
+import ProfilePage from "./pages/ProfilePage/ProfilePage";
 export const AppContext = createContext(null);
 function App() {
 
@@ -22,17 +23,18 @@ function App() {
             <div className={style.wrapper}>
                 <AppContext.Provider value={{ isLogin, setIsLogin, user, setUser }}>
                     <Header />
-                    <Routes>
-                        <Route path="*" element={<NotFound />} />
-                        <Route path="/" element={<Main />} />
-                        <Route path="/login" element={<Login />} />
-                        <Route path="/match/:id" element={<Match />} />
-                        <Route path="/about" element={<AboutUs />} />
-                        <Route path="/players/:id" element={<Players />} />
-                        <Route path="/competition/:id" element={<Competition />} />
-                    </Routes>
+                        <Routes>
+                            <Route path="/" element={<Main />} />
+                            <Route path="/login" element={<Login />} />
+                            <Route path="/match/:id" element={<Match />} />
+                            <Route path="/about" element={<AboutUs />} />
+                            <Route path="/players/:id" element={<Players />} />
+                            <Route path="/competition/:id" element={<Competition />} />
+                            <Route path="/profile" element={<ProfilePage />} />
+                            <Route path="*" element={<NotFound />} />
+                        </Routes>
+                    <Footer />
                 </AppContext.Provider>
-                <Footer />
             </div>
         </div>
     );

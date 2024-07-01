@@ -10,6 +10,7 @@ function LiveMatch(props){
             </div>
             <div className={style.matchInfo}>
                 <div className={style.team_A}>
+                    <p className={style.team_A_short_name}>{props.data.teams[0].short_name}</p>
                     <p className={style.team_A_name}>{props.data.teams[0].team}</p>
                     <img className={style.team_A_logo} src={props.data.teams[0].logoUrl} alt="" />
                 </div>
@@ -19,6 +20,7 @@ function LiveMatch(props){
                 <div className={style.team_B}>
                     <img className={style.team_B_logo} src={props.data.teams[1].logoUrl} alt="" />
                     <p className={style.team_B_name}>{props.data.teams[1].team}</p>
+                    <p className={style.team_B_short_name}>{props.data.teams[1].short_name}</p>
                 </div>
             </div>
             <div className={style.live_tv}>

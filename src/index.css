@@ -24,12 +24,6 @@ a {
     color: white;
 }
 
-p {
-    font-size: 10px;
-    font-weight: bold;
-    font-family: "PT Sans", sans-serif;
-}
-
 label  , button{
     cursor: pointer;
 }

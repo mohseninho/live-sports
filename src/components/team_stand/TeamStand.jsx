@@ -22,6 +22,7 @@ function TeamStand(props) {
                 <p className={style.teamRank}>{props.rank + 1}</p>
                 <img className={style.teamLogo} src={team.team_logo} alt="team logo" />
                 <p className={style.teamName}>{team.team_name}</p>
+                <p className={style.team_short_name}>{team.team_short_name}</p>
             </div>
             <div className={style.teamResult}>
                 <p className={style.mp}>{team.result[0]}</p>

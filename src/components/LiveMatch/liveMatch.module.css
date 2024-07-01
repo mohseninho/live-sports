@@ -79,6 +79,13 @@
     margin: 0 5px;
 }
 
+.team_A_short_name , .team_B_short_name{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 5px;
+    display: none;
+}
+
 .live_tv{
     display: flex;
     justify-content: center;
@@ -152,7 +159,11 @@
     }
 
     .team_A_name , .team_B_name{
-        font-size: 0.7em;
+        display: none;
+    }
+
+    .team_A_short_name , .team_B_short_name{
+        display: block;
     }
 
     .competition{

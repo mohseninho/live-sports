@@ -4,10 +4,11 @@ import { faGoogle, faFacebook, faApple } from "@fortawesome/free-brands-svg-icon
 import { useContext, useState } from "react";
 import { AppContext } from "../../App";
 import { Users_data } from "../../data/users/Users"
+import { useNavigate } from "react-router-dom";
 
 function Login() {
     const { setIsLogin, setUser } = useContext(AppContext);
-
+    const navigate = useNavigate();
     const [userData, setUserData] = useState({
         email: "",
         password: ""
@@ -21,6 +22,7 @@ function Login() {
             } else if (_user.password === userData.password) {
                 setUser(_user);
                 setIsLogin(true);
+                navigate("/");
             } else {
                 alert("incorrect password!");
             }
